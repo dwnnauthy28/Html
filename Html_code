@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Uitc Request Form</h1>
+    <form>
+        <input type="checkbox" name="" id="">Student <input type="checkbox" name="" id="">Faculty <input type="checkbox" name="" id="">Admin<br>
+        Date Borrowed: <input type="datetime-local" name="" id="" required><br>
+        Name: <input type="text" name="" id=""required><br>
+        <label for="Request">Request to Borrow:</label><br>
+        <input type="checkbox" name="" id="">Projector<br>
+        <input type="checkbox" name="" id="">Extension <br>
+        <input type="checkbox" name="" id="">Patch Cord <br>
+        <input type="checkbox" name="" id="">Others (Pls Specify) <br>
+        <textarea name="" id="" cols="30" rows="8"></textarea><br>
+
+        <label for="Reason">Reason for Borrowing:</label><br>
+        <textarea name="" id="" cols="30" rows="8"required></textarea><br>
+        <label for="Reason">Signature of borrower:</label><br>
+        <textarea name="" id="" cols="30" rows="3"required></textarea><br>
+        <b>Return</b>
+        Date Return: <input type="datetime-local" name="" id=""required><br>
+        <label for="Signature">Signature of Attendant:</label><br>
+        <textarea name="" id="" cols="30" rows="3"required></textarea><br>
+        <input type="submit" value="Submit"><br>
+
+    
+    </form>
+</body>
+</html>
