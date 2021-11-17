@@ -1,23 +1,64 @@
+
 <!DOCTYPE html>
+<html lang="en">
 <head>
-
-<title>Login</title>
-<body>
-    <h1>TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES <h1/>
-
-    <div style='text-align: center;'>
-        <h4>Login</h4>
-        <form>
-            <p>Username:
-            <input type="text" name="" placeholder="Enter Username">
-            </p>
-            <p>Password:
-            <input type="password" name="" placeholder="Enter Password"></form>
-            </p>
-            <button type="button">Login</button><br>
-            <button type="button">Create Account</button><br>
-        </form>
-    </div>
-</body>
+    <meta charset="UTF-8">
+    <title>University Information Technology Center </title>
+    <link rel="stylesheet" href="try.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
+<body>
+    <div class="full-page">
+        <div class="sub-page">
+            <div class="navigation-bar">
+                <div class="logo">
+                    <a href='UITC.html'>UITC</a>
+                </div>
+                <nav>
+                    <ul id='MenuItems'>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>About Us</a></li>
+                        <li><a href='#'>Services</a></li>
+                        <li><a href='#'>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="form-box">
+                        <div class="form">
+                            <form class="login-form">
+                                <center><h1 class="main-heading">Login</h1></center>
+				                <input type="text"placeholder="Email"/>
+				                <input type="password"placeholder="Password"/>
+				                <button>Log In</button>
+				                <p class="message">Not Registered? <a href="#">Register</a></p>
+				            </form>
+                            <form class="regform">
+                                <center><h1 class="main-heading">Registration Form</h1></center>
+                                <input type='text'class='input-field'placeholder='First Name' required>
+                                <input type='text'class='input-field'placeholder='Last Name ' required>
+                                <input type='email'class='input-field'placeholder='Email' required>
+                                <input type='password'class='input-field'placeholder='Enter Password' required>
+                                <input type='password'class='input-field'placeholder='Confirm Password'  required>     
+				                <button>REGISTER</button>
+				                <p class="message">Already Registered?<a href="#">Login</a>
+				                </p>
+				            </form>
+			             </div>
+	                </div>
+                </div>
+                <div class="col-1">
+                    <h1 class='mes'>University<br> Information<br>Technology<br>Center<br>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+    </script>
+    <script>
+        $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+    </script>
+</body>
 </html>
