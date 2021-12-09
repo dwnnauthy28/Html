@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Inventory</title>
+  <title>Dashboard</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="inventory.css">
+  <link rel="stylesheet" href="dashboard.css">
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -35,64 +35,52 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h2>Inventory</h2>
-                <div class="card-title">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h4>List of Equipment Available</h4>
-                    </div>
-                    <div class="col-sm-6">
-                        <input type="text" name="form-control"  placeholder="Search">
-                        <button type="submit" class="btn btn-danger "> Submit </button>
-                    </div>
-                </div>
+                <h2>Dashboard</h2>
             </div>
+            <div class="card-body">
+                <h4>List of Equipment Borrowing</h4>
                 <table class="table table-dark table-hover table-boredered">
                     <thead>
                         <tr>
+                            <th scope="col">Borrow ID</th>
+                            <th scope="col">Borrow Date</th>
+                            <th scope="col">Return Date</th>
+                            <th scope="col">Student ID</th>
                             <th scope="col">Equipment ID</th>
-                            <th scope="col">Equipment Name</th>
                             <th scope="col">Status</th>
-                            <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th>21</th>
-                            <td>Extension</td>
-                            <td>Not Available</td>
-                            <td class="text-right">
-                                <button class="btn btn-primary badge-pill"> EDIT </button>
-                                <button class="btn btn-danger badge-pill"> DELETE </button>
-                            </td>
+                            <th>1</th>
+                            <td>11/30/2021</td>
+                            <td>12/07/2021</td>
+                            <td>19-0213</td>
+                            <td>21</td>
+                            <td>PENDING</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th>2</th>
+                            <td>11/30/2021</td>
+                            <td>12/10/2021</td>
+                            <td>19-0964</td>
+                            <td>10</td>
+                            <td>SUCCESSFUL</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
                             <th>10</th>
-                            <td>Projector</td>
-                            <td>Available</td>
-                            <td class="text-right">
-                                <button class="btn btn-primary badge-pill"> EDIT </button>
-                                <button class="btn btn-danger badge-pill"> DELETE </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <th>5</th>
-                            <td>Patch Cord</td>
-                            <td>Unavailable</td>
-                            <td class="text-right">
-                                <button class="btn btn-primary badge-pill"> EDIT </button>
-                                <button class="btn btn-danger badge-pill"> DELETE </button>
-                            </td>
+                            <td>12/01/2021</td>
+                            <td>12/20/2021</td>
+                            <td>19-0842</td>
+                            <td>5</td>
+                            <td>SUCCESSFUL</td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="row-add">
-                    <button type="button" class="btn btn-success btn-md">ADD EQUIPMENT</button>
-                </div>
             </div>
         </div>
     </div>
